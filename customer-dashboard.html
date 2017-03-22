@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1"/>
+        <title>B</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link rel="stylesheet" href="css/shopzone.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+
+        
+    </head>
+    <body class="merch-dash">
+        
+       <nav class="navbar navbar-default navbar-fixed-top nav-main nav-inner" role="navigation">
+                <div class="container nav-change">
+    
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-mobile">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo-white.png" width="40" height="40" alt="logo"/></a>
+                </div>
+    
+                <div class="navbar-collapse collapse" id="navbar-collapse-mobile">
+        
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-loc">
+                        <a href="#"> <p data-toggle="modal" data-target="#modal-location"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Banjara Hills ...   &nbsp; <i class="fa fa-caret-down"></i></p></a>
+                    </li>
+                </ul>
+        
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li><a href="#"><p><img src="images/notifications.png" width="20" height="20"/></p></a></li>
+                    <li class="dropdown">   
+                        <a href="#" class="dropdown-toggle mya" data-toggle="dropdown"><button class="btn btn-log"><i class="fa fa-user-circle" aria-hidden="true"></i> &nbsp; Mr. Abc Mukherjee &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></button></a>
+                        <ul class="dropdown-menu user-area">
+                            <li>
+                                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; &nbsp;Banjara Hills, Hyderabad</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Customer Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="merchant-dashboard.html"><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp; &nbsp;Merchant Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp; &nbsp;FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; &nbsp;Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp; &nbsp;Settings</a>
+                            </li>
+                            <li>
+                                <a href="index.html"><button class="btn btn-reg btn-block">SIGN OUT</button></a>
+                            </li>  
+                        </ul>
+                    </li>
+        </ul>
+      
+        <form class="navbar-form navbar-center">
+            <div class="form-group" style="display:inline;">
+                <div class="input-group">
+                    <input type="text" placeholder="Search .." class="form-control">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                </div>
+            </div>
+        </form>
+      
+    </div>
+    
+  </div>
+            </nav>
+        
+        <div class="container-fluid dash-content">
+        
+        <!-- Page Content -->
+        <div class="content row">
+            
+            <div class="col-md-2 col-sm-4 col-xs-12">
+        
+            <div class="navbar navbar-inverse navbar-fixed-left inner-board">
+          <a class="navbar-brand" href="#"> </a>
+          <ul class="nav navbar-nav">
+            <li id="d-p">
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;My Profile</a>
+            </li>
+            <li id= "d-t">
+                <a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp; &nbsp;My Orders</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-file" aria-hidden="true"></i>&nbsp; &nbsp;Report</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; &nbsp;Help &amp; Support</a>
+            </li>
+              
+          </ul>
+        </div>
+                
+            </div>
+        
+            <div class="col-md-offset-2 col-sm-offset-3">
+            <!-- Main content on side -->
+        
+                <div class="container dash-spacing d-p d-t-n d-m-1-n d-m-2-n d-m-3-n">
+                <div class="col-sm-12 col-xs-10">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                            <h3 class="page-header">My Shop</h3>
+                    </div>
+                </div>
+                <div class="myshop">
+                    <div class="row">
+                        <div class="col-md-2"><img src="" width="150" height="150"/></div>
+                        <div class="col-md-10">
+                            <p>&nbsp;</p>
+                        <form action="#">
+                            <button class="btn btn-customer">Upload Picture</button>     
+                        </form>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12">
+                        <p class="col-sm-6">
+                            <span class="pull-right">
+                                <a href="#">Edit</a>
+                                <a href="#">Save</a>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <form role="form" action="#" name="profile-customer" id="profile-customer" method="post" >
+                         <p class="form-group">
+                            <label>User Name</label>
+                            <input  class="form-control" type="text" required />
+                         </p>
+                        <p class="form-group">
+                            <label>Phone No</label>
+                            <input  class="form-control" type="number" required />
+                         </p> 
+                        <p class="form-group">
+                            <label>E-mail ID</label>
+                            <input  class="form-control" type="email" required />
+                         </p> 
+                        <p class="form-group">
+                            <label>Address</label>
+                            <input  class="form-control" type="text" required />
+                         </p> 
+                    </form>
+                                <!-- / Form fields -->
+                    </div>
+                </div>
+                
+            
+                <div class="container d-p-n d-t d-m-1-n d-m-2-n d-m-3-n" id="mytransactions">
+            <div class="dash-spacing">
+                <div class="col-sm-10">
+                    <div class="col-md-3">
+                            <h3 class="page-header">My Orders</h3>
+                    </div>
+                </div> 
+                <div id="no-more-tables" class="col-sm-10 table-responsive">
+                    <table class="table text-center">
+                        <thead class="text-center">
+                            <tr class="custab">
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td data-title="Item"><p>Cucumber</p></td>
+                                    <td data-title="Quantity"><p>3</p></td>                                  
+                                    <td data-title="Date"><p>19/03/17</p></td>
+                                    <td data-title="Status"><p><span class="dash-note dash-in">Delivered</span></p></td>
+                                </tr>
+                            
+                                <tr>
+                                    <td data-title="Item"><p>Brinjal</p></td>                                    
+                                    <td data-title="Quantity"><p>2</p></td>
+                                    <td data-title="Date"><p>09/04/17</p></td>
+                                    <td data-title="Status"><p><span class="dash-note dash-out">Undelivered</span></p></td>
+                                </tr>
+                                
+                                
+                        </tbody>
+                    </table>
+                    </div>
+            </div>
+            </div>
+                   
+            </div>
+            
+        </div>
+        <!-- Page Content Closed -->  
+            
+        </div>
+        
+        <!-- Modal for Location -->
+        <div class="modal fade modal-ext" id="modal-location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-myloc" role="document">
+                <!--Content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-responsive" src="images/map.png" alt="location"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Find Your Location</h3>
+                                    <input type="text" class="form-control" placeholder="Enter Location">
+                                    <span class="inner-title">(OR)</span>
+                                    <input type="text" class="form-control" placeholder="Enter Pincode / Area">
+                                    <button type="submit" class="btn btn-reg btn-block" form="login" name="send">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div><!-- / Modal for Location-->
+    
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        
+    </body>
+</html> 

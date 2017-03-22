@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1"/>
+        <title>B</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link rel="stylesheet" href="css/shopzone.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+
+        
+    </head>
+    <body class="merch-dash">
+        
+       <nav class="navbar navbar-default navbar-fixed-top nav-main nav-inner" role="navigation">
+                <div class="container nav-change">
+    
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-mobile">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo-white.png" width="40" height="40" alt="logo"/></a>
+                </div>
+    
+                <div class="navbar-collapse collapse" id="navbar-collapse-mobile">
+        
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-loc">
+                        <a href="#"> <p data-toggle="modal" data-target="#modal-location"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Banjara Hills ...   &nbsp; <i class="fa fa-caret-down"></i></p></a>
+                    </li>
+                </ul>
+        
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li><a href="#"><p><img src="images/cart.png" width="20" height="20"/></p></a></li>
+                    <li class="dropdown">   
+                        <a href="#" class="dropdown-toggle mya" data-toggle="dropdown"><button class="btn btn-log"><i class="fa fa-user-circle" aria-hidden="true"></i> &nbsp; Mr. Abc Mukherjee &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></button></a>
+                        <ul class="dropdown-menu user-area">
+                            <li>
+                                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; &nbsp;Banjara Hills, Hyderabad</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Customer Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="merchant-dashboard.html"><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp; &nbsp;Merchant Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp; &nbsp;FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; &nbsp;Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp; &nbsp;Settings</a>
+                            </li>
+                            <li>
+                                <a href="index.html"><button class="btn btn-reg btn-block">SIGN OUT</button></a>
+                            </li>  
+                        </ul>
+                    </li>
+        </ul>
+      
+        <form class="navbar-form navbar-center">
+            <div class="form-group" style="display:inline;">
+                <div class="input-group">
+                    <input type="text" placeholder="Search .." class="form-control">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                </div>
+            </div>
+        </form>
+      
+    </div>
+    
+  </div>
+            </nav>
+        
+        <div class="container-fluid dash-content">
+        
+            <!-- Page Content -->
+            <div class="content row">
+            
+                <div class="col-md-2 col-sm-4 col-xs-12">
+        
+            <div class="navbar navbar-inverse navbar-fixed-left inner-board">
+          <a class="navbar-brand" href="#"> </a>
+          <ul class="nav navbar-nav">
+            <li id="d-p">
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;My Shop</a>
+            </li>
+            <li id= "d-t">
+                <a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp; &nbsp;My Transactions</a>
+            </li>
+            <li id="d-m-1">
+               <a href="#"><i class="fa fa-cube" aria-hidden="true"></i>&nbsp; &nbsp;My Products &nbsp;<span class="caret"></span></a>
+                <ul id="d-m-nhc" class="inner-hide" role="menu">
+                    <li id="d-m-2">
+                        <a href="#">Add new product</a>
+                    </li>
+                    <li id="d-m-3">
+                      <a href="#">Manage Products</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-file" aria-hidden="true"></i>&nbsp; &nbsp;Report</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; &nbsp;Help &amp; Support</a>
+            </li>
+              
+          </ul>
+        </div>
+                
+            </div>
+        
+                <div class="col-md-offset-2 col-sm-offset-3">
+                <!-- Main content on side -->
+                 
+                <div class="container dash-spacing d-p d-t-n d-m-1-n d-m-2-n d-m-3-n">
+                <div class="col-sm-10 col-xs-10">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                            <h3 class="page-header" style="text-align:left;">My Shop</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-10">
+                    <div class="thumbnail">
+                        <a href="#" id="my-profile-edit">
+                            <span class="notify-badge"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></span>
+                        </a> 
+                        <img class="img-responsive" src="images/shop.png" alt="">
+                        <div class="caption">
+                            <table>
+                            
+                            <tr>
+                                <td>Seller :</td>
+                                <td>Hercules</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td>Address :</td>
+                                <td>ABC Street 23/A Hyderabad</td>
+                            </tr>
+                            <tr>
+                                <td>Timings :</td>
+                                <td>9 A.M TO 10 P.M</td>
+                            </tr>
+                               
+                            </table>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="container d-p-n d-t d-m-1-n d-m-2-n d-m-3-n" id="mytransactions">
+            <div class="dash-spacing">
+                <div id="no-more-tables" class="col-sm-10 table-responsive">
+                    <table class="table text-center">
+                        <thead class="text-center">
+                            <tr class="custab">
+                                <th>Amount</th>
+                                <th>Refund / Deduct</th>
+                                <th>Date</th>
+                                <th>Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td data-title="Amount"><p>Rs 32</p></td>
+                                    <td data-title="Refund / Deduct"><p><span class="dash-note dash-out">Deduct</span></p></td>
+                                    <td data-title="Date"><p>12/03/17</p></td>
+                                    <td data-title="Information"><p>Success</p></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td data-title="Amount"><p>Rs 45</p></td>
+                                    <td data-title="Refund / Deduct"><p><span class="dash-note dash-in">Refund</span></p></td>
+                                    <td data-title="Date"><p>19/03/17</p></td>
+                                    <td data-title="Information"><p>Success</p></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                    </div>
+            </div>
+            </div>
+            
+                <div class="container dash-spacing d-p-n d-t-n d-m-1 d-m-2-n d-m-3-n" id="myproducts">
+                <div class="col-sm-10">
+                    <h3 class="page-header">My Products</h3>
+                </div>
+                <div class="dash-mypro">
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="images/Spinach.png" alt="">
+                            <div class="caption">
+                                <p>Salad Green</p>
+                                <p><span class="green">10% off</span></p>
+                                <p>1 Kg<span class="lk" style="text-decoration:line-through;">120 rs</span></p>
+                                <p><span class="lk-2">110 rs</span></p>                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="images/Spinach.png" alt="">
+                            <div class="caption">
+                                <p>Green Peas </p>
+                                <p><span class="green">20% off</span></p>
+                                <p>1 Kg<span class="lk" style="text-decoration:line-through;">120 rs</span></p>
+                                <p><span class="lk-2">96 rs</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+                    
+                <div class="container d-p-n d-t-n d-m-1-n d-m-2 d-m-3-n" id="mypro-add">
+                <div class="dash-spacing col-sm-10">
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li><a href="#AddProduct" data-toggle="tab"><h4>Add Product</h4></a></li>
+                            <li><a href="#BrowseProducts" data-toggle="tab"><h4>Browse Products</h4></a></li>
+                        </ul>
+                    </div>
+                    <!-- Tab panes -->
+                     <div class="tab-content">
+                         <div class="tab-pane active" id="AddProduct">
+                             <form role="form" action="#" name="upload" id="upload" method="post" >
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Select Category</option>
+                                     <option>Grocery</option>
+                                 </select> 
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Select Sub Category</option>
+                                     <option>Vegetables</option>
+                                 </select>
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Category of Sub Category</option>
+                                     <option>Cucumber</option>
+                                 </select>
+                                 <input  class="form-control"  placeholder="Product Name" type="text" required />
+                                <div class="row">
+                                    <div class="col-md-2"><img src="images/Spinach.png" width="150" height="150"/></div>
+                                    <div class="col-md-offset-1 col-md-9">
+                                        <p>&nbsp;</p>
+                                        <form action="#">
+                                        <button class="btn btn-customer">Upload Picture</button>
+                                        <button class="btn">Delete</button>     
+                                        </form>
+                                    </div>
+                                 </div>
+                                 <textarea name="Description" placeholder="Description"  rows="5" columns="50"></textarea>
+                                 <br/>
+                                 <label>Measured Unit</label>
+                                 <br/>
+                                 <select name="measured unit">
+                                     <option value="" disabled selected hidden>Choose Your Value</option>
+                                     <option>Liters</option>
+                                     <option>Milli Liters</option>
+                                     <option>Kilo Grams</option>
+                                     <option>Grams</option>
+                                 </select> 
+                                <input  class="form-control"  placeholder="Measured Quantity" type="number" required />
+                                <form class="dash-num">
+                                    <label>Quantity</label> <br/>
+                                    <div class="dash-bor">
+                                        <div><button class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">&minus;</button></div>
+                                        <div><input class="text-center" type="number" id="number" value="0"></div>
+                                        <div><button class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">&plus;</button></div>
+                                    </div>
+                                </form>
+                                 <br />
+                                 <div class="dash-cost">
+                                    <input class="form-control" placeholder="Selling Price" type="number" />
+                                    <label>Stock</label> <br/>
+                                    <input type="checkbox" />
+                                </div>
+                                 <select>
+                                     <option value="" disabled selected hidden> Status </option>
+                                     <option>Active</option>
+                                     <option>Disabled</option>
+                                 </select>
+                                 
+                                  <!-- UPLOAD button -->
+                                  <div><input type="submit" value="UPLOAD" class="send btn  btn-reg" form="login" name="ADD NEW PRODUCT" /></div>
+                             </form>
+                                <!-- / Form fields -->
+                            </div>
+                                
+                            <div class="tab-pane" id="BrowseProducts">
+                            <form role="form" action="#" name="upload" id="upload" method="post" >
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Select Category</option>
+                                     <option>Grocery</option>
+                                 </select> 
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Select Sub Category</option>
+                                     <option>Vegetables</option>
+                                 </select>
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Category of Sub Category</option>
+                                     <option>Cucumber</option>
+                                 </select>
+                                 <input  class="form-control"  placeholder="Product Name" type="text" required />
+                                <div class="row">
+                                    <div class="col-md-2"><img src="images/Spinach.png" width="150" height="150"/></div>
+                                    <div class="col-md-offset-1 col-md-9">
+                                        <p>&nbsp;</p>
+                                        <form action="#">
+                                        <button class="btn btn-customer">Upload Picture</button>
+                                        <button class="btn">Delete</button>     
+                                        </form>
+                                    </div>
+                                 </div>
+                                 <textarea name="Description" placeholder="Description"  rows="5" columns="50"></textarea>
+                                 <br/>
+                                 <label>Measured Unit</label>
+                                 <br/>
+                                 <select name="measured unit">
+                                     <option value="" disabled selected hidden>Choose Your Value</option>
+                                     <option>Liters</option>
+                                     <option>Milli Liters</option>
+                                     <option>Kilo Grams</option>
+                                     <option>Grams</option>
+                                 </select> 
+                                <input  class="form-control"  placeholder="Measured Quantity" type="number" required />
+                                <form class="dash-num">
+                                    <label>Quantity</label> <br/>
+                                    <div class="dash-bor">
+                                        <div><button class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">&minus;</button></div>
+                                        <div><input class="text-center" type="number" id="number" value="0"></div>
+                                        <div><button class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">&plus;</button></div>
+                                    </div>
+                                </form>
+                                 <br />
+                                 <div class="dash-cost">
+                                    <input class="form-control" placeholder="Selling Price" type="number" />
+                                    <label>Stock</label> <br/>
+                                    <input type="checkbox" />
+                                </div>
+                                 <select>
+                                     <option value="" disabled selected hidden> Status </option>
+                                     <option>Active</option>
+                                     <option>Disabled</option>
+                                 </select>
+                                 
+                                  <!-- UPLOAD button -->
+                                  <div><input type="submit" value="UPLOAD" class="send btn  btn-reg" form="login" name="ADD NEW PRODUCT" /></div>
+                             </form>
+                                <!-- / Form fields -->
+                            </div>
+                        </div>
+            </div>
+            </div>
+
+                <div class="container d-p-n d-t-n d-m-1-n d-m-2-n d-m-3" id="mg-pro">
+               <div class="dash-spacing">
+                <div class="col-sm-10">
+                    <h3 class="page-header">Manage Products</h3>
+                </div>
+                <div class="dash-mypro">
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="#" id="mg-pro-type-1">
+                            <span class="notify-badge"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></span>
+                            <img class="img-responsive" src="images/Spinach.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <p>Salad Green</p>
+                                <p><span class="green">10% off</span></p>
+                                <p>1 Kg<span class="lk" style="text-decoration:line-through;">120 rs</span></p>
+                                <p><span class="lk-2">110 rs</span></p>                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="#" id="mg-pro-type-2">
+                                <span class="notify-badge"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></span>
+                                <img class="img-responsive" src="images/Spinach.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <p>Green Peas</p>
+                                <p><span class="green">20% off</span></p>
+                                <p>1 Kg<span class="lk" style="text-decoration:line-through;">120 rs</span></p>
+                                <p><span class="lk-2">96 rs</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+               </div>
+            </div>
+                
+                <div class="container d-p-n d-t-n d-m-1-n d-m-2-n d-m-3-n my-profile-edit dash-spacing">
+                
+                <div>
+                    <div id="d-p-bk">
+                        <a href="#"><h3 class="page-header"><i class="fa fa-caret-left" aria-hidden="true"></i> Edit</h3></a>
+                    </div>
+                </div>
+                <div class="myshop">
+                    <div class="row">
+                        <div class="col-md-2"><img src="images/shop.png" width="150" height="150"/></div>
+                        <div class="col-md-10">
+                            <p>&nbsp;</p>
+                        <form action="#">
+                            <button class="btn btn-customer">Upload Picture</button>
+                            <button class="btn">Delete</button>     
+
+                        </form>
+                        </div>
+                    </div>
+                    
+                    <form role="form" action="#" name="profile-update" id="profile-update" method="post" >
+                         <p class="form-group">
+                            <input  class="form-control" type="text" placeholder="Shop Name" required />
+                            <input  class="form-control" type="text" placeholder="Merchant Name" required />
+                            <input  class="form-control" type="number" placeholder="Phone No" required />
+                            <input  class="form-control" type="email" placeholder="Email ID" required />
+                            <textarea name="Description" placeholder="Address"  rows="5" columns="50"></textarea>
+                            <!--<input  class="form-control" type="text" placeholder="Password"  required />
+                            <input  class="form-control" type="text" placeholder="Confirm Password"  required /> -->
+                            <input  class="form-control" type="number" placeholder="Min Order" required />
+                            <input  class="form-control" type="number" placeholder="Accepted PinCodes" required />
+                            <label>Shop Times</label><br/>                       
+                             <input type='time' name="time" value='now'/> to <input type='time' name="time" value='now'/>
+                             <br/>
+                             <select name="Select Category">
+                                 <option value="" disabled selected hidden>Select Category</option>
+                                 <option>Vegetables</option>
+                             </select>
+                             <details>
+                                <summary>Commission</summary>
+                                 <br/>
+                                 <p>A Commission of 0.5% will be reduced from your wallet on every order.</p>
+                             </details>
+                             <br/>
+                             <input type="checkbox" id="terms-agree" name="terms-agree" checked="checked" />
+                             <label for="terms-agree" class="tick"> <span> By accepting this you agreed to our<a href="#">Terms &amp; Conditions</a></span></label>
+                             <br />
+                             <input type="submit" value="UPDATE" class="btn  btn-reg" form="login" name="UPDATE" />
+                            </p>
+                        </form>
+                                <!-- / Form fields -->
+                    </div>
+                </div>
+                
+                <div class="container d-p-n d-t-n d-m-1-n d-m-2-n d-m-3-n mg-pro-type-1">
+                <div class="dash-spacing">
+                    <div>
+                        <div id="d-m-3-bk">
+                            <a href="#"><h3 class="page-header"><i class="fa fa-caret-left" aria-hidden="true"></i> Manage Products</h3></a>
+                        </div>
+                    </div>
+                          <form role="form" action="#" name="upload" id="upload" method="post" >
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Select Category</option>
+                                     <option>Grocery</option>
+                                 </select> 
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Select Sub Category</option>
+                                     <option>Vegetables</option>
+                                 </select>
+                                 <select name="Select Category">
+                                     <option value="" disabled selected hidden>Category of Sub Category</option>
+                                     <option>Cucumber</option>
+                                 </select>
+                                 <input  class="form-control"  placeholder="Product Name" type="text" required />
+                                <div class="row">
+                                    <div class="col-md-2"><img src="images/Spinach.png" width="150" height="150"/></div>
+                                    <div class="col-md-offset-1 col-md-9">
+                                        <p>&nbsp;</p>
+                                        <form action="#">
+                                        <button class="btn btn-customer">Upload Picture</button>
+                                        <button class="btn">Delete</button>     
+                                        </form>
+                                    </div>
+                                 </div>
+                                 <textarea name="Description" placeholder="Description"  rows="5" columns="50"></textarea>
+                                 <br/>
+                                 <label>Measured Unit</label>
+                                 <br/>
+                                 <select name="measured unit">
+                                     <option value="" disabled selected hidden>Choose Your Value</option>
+                                     <option>Liters</option>
+                                     <option>Milli Liters</option>
+                                     <option>Kilo Grams</option>
+                                     <option>Grams</option>
+                                 </select> 
+                                <input  class="form-control"  placeholder="Measured Quantity" type="number" required />
+                                <form class="dash-num">
+                                    <label>Quantity</label> <br/>
+                                    <div class="dash-bor">
+                                        <div><button class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">&minus;</button></div>
+                                        <div><input class="text-center" type="number" id="number" value="0"></div>
+                                        <div><button class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">&plus;</button></div>
+                                    </div>
+                                </form>
+                                 <br />
+                                 <div class="dash-cost">
+                                    <input class="form-control" placeholder="Selling Price" type="number" />
+                                    <label>Stock</label> <br/>
+                                    <input type="checkbox" />
+                                </div>
+                                 <select>
+                                     <option value="" disabled selected hidden> Status </option>
+                                     <option>Active</option>
+                                     <option>Disabled</option>
+                                 </select>
+                                 
+                                  <!-- UPLOAD button -->
+                                  <div><input type="submit" value="UPLOAD" class="send btn  btn-reg" form="login" name="ADD NEW PRODUCT" /></div>
+                             </form>
+                                <!-- / Form fields -->
+                            </div>
+                    </div>
+                
+            </div>
+            
+            </div>
+                        
+        </div>
+        <!-- Page Content Closed -->  
+        
+        <!-- Modal for Location -->
+        <div class="modal fade modal-ext" id="modal-location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-myloc" role="document">
+                <!--Content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-responsive" src="images/map.png" alt="location"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Find Your Location</h3>
+                                    <input type="text" class="form-control" placeholder="Enter Location">
+                                    <span class="inner-title">(OR)</span>
+                                    <input type="text" class="form-control" placeholder="Enter Pincode / Area">
+                                    <button type="submit" class="btn btn-reg btn-block" form="login" name="send">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- / Modal for Location-->
+    
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        
+    </body>
+</html> 
