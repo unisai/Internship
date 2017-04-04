@@ -46,7 +46,7 @@
                                 <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; &nbsp;Banjara Hills, Hyderabad</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Customer Dashboard</a>
+                                <a href="customer-dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Customer Dashboard</a>
                             </li>
                             <li>
                                 <a href="merchant-dashboard.html"><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp; &nbsp;Merchant Dashboard</a>
@@ -68,7 +68,7 @@
         </ul>
       
         <form class="navbar-form navbar-center">
-            <div class="form-group" style="display:inline;">
+            <div class="form-group">
                 <div class="input-group">
                     <input type="text" placeholder="Search .." class="form-control">
                     <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
@@ -91,17 +91,17 @@
             <div class="navbar navbar-inverse navbar-fixed-left inner-board">
           <a class="navbar-brand" href="#"> </a>
           <ul class="nav navbar-nav">
-            <li id="d-p">
+            <li id="c-p">
                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;My Profile</a>
             </li>
-            <li id= "d-t">
+            <li id= "c-o">
                 <a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp; &nbsp;My Orders</a>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-file" aria-hidden="true"></i>&nbsp; &nbsp;Report</a>
+            <li id="c-f">
+                <a href="#"><i class="fa fa-comments-o" aria-hiddd-o-n en="true"></i>&nbsp; &nbsp;Feedback</a>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; &nbsp;Help &amp; Support</a>
+              <li id="c-h">
+                <a href="#"><i class="fa fa-info-circle" aria-hiddd-o-n en="true"></i>&nbsp; &nbsp;Help &amp; Support</a>
             </li>
               
           </ul>
@@ -112,15 +112,12 @@
             <div class="col-md-offset-2 col-sm-offset-3">
             <!-- Main content on side -->
         
-                <div class="container dash-spacing d-p d-t-n d-m-1-n d-m-2-n d-m-3-n">
-                <div class="col-sm-12 col-xs-10">
-                    <div class="col-md-3 col-sm-4 col-xs-6">
-                            <h3 class="page-header">My Shop</h3>
-                    </div>
-                </div>
+                <div class="container c-p c-o-n c-h-n c-f-n">
+                    <div class="dash-spacing">
+                    <h3 class="page-header">My Profile</h3>
                 <div class="myshop">
                     <div class="row">
-                        <div class="col-md-2"><img src="" width="150" height="150"/></div>
+                        <div class="col-md-2"><img src="images/user.png" width="150" height="150"/></div>
                         <div class="col-md-10">
                             <p>&nbsp;</p>
                         <form action="#">
@@ -152,6 +149,10 @@
                             <input  class="form-control" type="email" required />
                          </p> 
                         <p class="form-group">
+                            <label>Password</label>
+                            <input  class="form-control" type="text" required />
+                        </p> 
+                        <p class="form-group">
                             <label>Address</label>
                             <input  class="form-control" type="text" required />
                          </p> 
@@ -159,15 +160,11 @@
                                 <!-- / Form fields -->
                     </div>
                 </div>
-                
+                </div>
             
-                <div class="container d-p-n d-t d-m-1-n d-m-2-n d-m-3-n" id="mytransactions">
+                <div class="container c-p-n c-o c-h-n c-f-n" id="cust-orders">
             <div class="dash-spacing">
-                <div class="col-sm-10">
-                    <div class="col-md-3">
-                            <h3 class="page-header">My Orders</h3>
-                    </div>
-                </div> 
+                <h3 class="page-header">My Orders</h3>
                 <div id="no-more-tables" class="col-sm-10 table-responsive">
                     <table class="table text-center">
                         <thead class="text-center">
@@ -200,6 +197,37 @@
             </div>
             </div>
                    
+                <div class="container c-p-n c-o-n c-h c-f-n" id="cust-helpme">
+                    <div class="dash-spacing">
+                        <form role="form" action="#" name="help-support" method="post" >
+                         <p class="form-group">
+                            <label>Enter Title</label>
+                            <input  class="form-control" type="text" required />
+                         </p>
+                        <p class="form-group">
+                            <label>Enter Description</label>
+                            <br/>
+                            <textarea name="Description" rows="5" columns="50"></textarea>
+                        </p> 
+                        <input type="submit" value="SUBMIT" class="btn  btn-reg" form="login" name="SUBMIT" />
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="container c-p-n c-o-n c-h-n c-f" id="cust-feedback">
+                    <div class="dash-spacing">
+                        <form role="form" action="#" name="help-support" method="post" >
+                        <p class="form-group">
+                            <label>Enter Your Feedback</label>
+                            <br/>
+                            <textarea name="Feedback" placeholder="Feedback" rows="5" columns="50"></textarea>
+                            <br/>
+                            <input type="submit" value="SUBMIT" class="btn  btn-reg" form="login" name="SUBMIT" />
+                        </p> 
+                        </form>
+                    </div>
+                </div>
+                
             </div>
             
         </div>

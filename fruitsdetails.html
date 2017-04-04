@@ -49,7 +49,7 @@
         </ul>
       
         <form class="navbar-form navbar-center">
-            <div class="form-group" style="display:inline;">
+            <div class="form-group">
                 <div class="input-group">
                     <input type="text" placeholder="Search .." class="form-control">
                     <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
@@ -73,7 +73,7 @@
         <nav class="mega-dropdown">
             <ul class="nav navbar-nav">
                 <li class="dropdown chs-cat">
-                    <a href="javascript:void(0);" class="dropdown-toggle " data-toggle="dropdown">Choose Category &#11167;</a>
+                    <a href="javascript:void(0);" class="dropdown-toggle " data-toggle="dropdown">Choose Category <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
 				        <!-- One Page -->
 				        <li class="dropdown-submenu">
@@ -105,9 +105,34 @@
         
     <!-- store Image-->
         <div class="container shopzone">
-            <img class="img-responsive" src="images/shopzone.png" alt="shoplocation" />
-        </div>
-    
+            <div class="shopzone-image">
+                <div class="feedback"><button class="btn btn-primary pull-right">Send Feedback</button></div>
+
+                <div class="row">
+                    <div class="col-md-offset-5 col-md-3 col-sm-offset-4 col-xs-offset-4 sz-c">
+                        <a href="fruitsdetails.html"><img class="img-responsive" src="images/shop.png"  width="200" height="200" alt="shop"></a>
+                        <div class="caption">
+                        
+                        <table>
+                            
+                            <tr>
+                                <td>Shop Name :</td>
+                                <td>Caveo De Serif</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td>Address :</td>
+                                <td>ABC Street 23/A Hyderabad</td>
+                            </tr>
+                            <tr>
+                                <td>Timings :</td>
+                                <td>9 A.M TO 10 P.M</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         
     <!-- Page Shopping -->
     <div class="container shopzone-items">
@@ -116,9 +141,9 @@
 
             <!-- Blog Entries Column -->
             
-
             <!-- Blog Sidebar Widgets Column -->
             <div class="col-md-3 rt" >
+                
                 <h4 class="ty">Fruits &amp; Vegetables</h4>
 
                 
@@ -156,6 +181,31 @@
                         </article><!--/ac-text--><!--/ac-text-->
 
                       </div><!--/ac-->
+                        
+                      <div class="reviews">
+                        
+                        <h3 class="page-header">Reviews</h3>
+                        
+                        <table>
+                            <tr>
+                                <td><img alt="Product Image" width="40" height="40" src="images/review-1.png"></td>
+                                <td>
+                                    <p><a href="#">Ashok</a></p>
+                                    <p><span id="stars-existing" class="starrr" data-rating='4'></span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Product Image" width="40" height="40" src="images/review-2.png"></td>
+                                <td>
+                                    <p><a href="#">Prasad</a></p>
+                                    <p><span id="stars-existing" class="starrr" data-rating='5'></span></p>
+                                </td>
+                            </tr>
+                        </table>
+                                    
+
+                      </div>
+                    
   
                     </div>
                     <!-- /.row -->
@@ -164,19 +214,18 @@
             </div>
             
             <div class="col-md-9">
-            <div class="row">
-            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12">
                 
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li> <li><a href="fruits.html">Shops</a>
-                    </li>
-                    <li class="active">Fruits &amp; Vegetables</li>
-                </ol>
-            </div>
-        </div>
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li> 
+                            <li><a href="fruits.html">Shops</a></li>
+                            <li class="active">Fruits &amp; Vegetables</li>
+                        </ol>
+                    </div>
+                </div>
         
-        <div class="row details">
+            <div class="row details">
            
             <div class="col-md-3">
                 <div class="thumbnail">
@@ -200,7 +249,16 @@
                             </tr>
                         </table>
                         <br/>
-                        <p><a class="btn btn-reg btn-block" href="#">ADD TO CART</a></p>
+                        <p class="btn btn-reg btn-block" id ="veg-a" role="button">ADD TO CART</p>
+                        <form class="num" id="veg-1a">
+                            <table>
+                                <tr>
+                                    <td><button class="value-button pull-right" id="decrease" onclick="decreaseValue()" value="Decrease Value">&minus;</button></td>
+                                    <td><input type="number" class="text-center" id="number" value="0"></td>
+                                    <td><button class="value-button pull-left" id="increase" onclick="increaseValue()" value="Increase Value">&plus;</button></td>
+                                </tr>
+                            </table>
+                        </form>
                            
                     </div>
                 </div>
@@ -209,15 +267,36 @@
                 <div class="thumbnail th">
                     <img class="img-responsive" src="images/Spinach.png" alt="">
                     <div class="caption">
-                            <p>Green Peas</p>
-                            <p><span class="green">20% off</span></p>
-                            <p>1 Kg <span class="lk" style="text-decoration:line-through;">120 rs</span></p>
-                            <p><span class="lk">96 rs</span></p>
-                            <form class="num">
-                                <div><button class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">&minus;</button></div>
-                                <div><input type="number" class="text-center" id="number" value="0"></div>
-                                <div><button class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">&plus;</button></div>
-                            </form>
+                            
+                        
+                        <table>
+                            <tr>
+                                <td colspan="2">Salad Green</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><span class="green">10% off</span></td>
+                            </tr>
+                            <tr>
+                                <td>1kg</td>
+                                <td class="text-right" ><span style="text-decoration:line-through;">120 Rs</span></td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td class="text-right">110 Rs</td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <p class="btn btn-reg btn-block" id ="veg-b" role="button">ADD TO CART</p>
+                        <form class="num" id="veg-1b">
+                            <table>
+                                <tr>
+                                    <td><button class="value-button pull-right" id="decrease" onclick="decreaseValue()" value="Decrease Value">&minus;</button></td>
+                                    <td><input type="number" class="text-center" id="number" value="0"></td>
+                                    <td><button class="value-button pull-left" id="increase" onclick="increaseValue()" value="Increase Value">&plus;</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                        
                         </div>
                     </div>
                 </div>
@@ -230,7 +309,10 @@
 
         </div>
         
-     </div><!-- Page Content Closed -->   
+     </div><!-- Page Content Closed -->  
+        
+        <!-- Free Space -->
+        <div style="width:100%;height:350px;"></div>
         
         <!-- Modal for Location -->
         <div class="modal fade modal-ext" id="modal-location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -364,12 +446,13 @@
                                     </div>
                                 </div></div></div>
         
-        
+        </div>
       
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/stars.js"></script>
         
     </body>
 </html>

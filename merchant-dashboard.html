@@ -46,7 +46,7 @@
                                 <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; &nbsp;Banjara Hills, Hyderabad</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Customer Dashboard</a>
+                                <a href="customer-dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Customer Dashboard</a>
                             </li>
                             <li>
                                 <a href="merchant-dashboard.html"><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp; &nbsp;Merchant Dashboard</a>
@@ -97,6 +97,9 @@
             <li id= "d-t">
                 <a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp; &nbsp;My Transactions</a>
             </li>
+            <li id= "d-o">
+                <a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp; &nbsp;My Orders</a>
+            </li>
             <li id="d-m-1">
                <a href="#"><i class="fa fa-cube" aria-hidden="true"></i>&nbsp; &nbsp;My Products &nbsp;<span class="caret"></span></a>
                 <ul id="d-m-nhc" class="inner-hide" role="menu">
@@ -108,11 +111,11 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-file" aria-hidden="true"></i>&nbsp; &nbsp;Report</a>
+            <li id="d-s">
+                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp; &nbsp;Settings</a>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; &nbsp;Help &amp; Support</a>
+            <li id="d-h">
+                <a href="#"><i class="fa fa-info-circle" aria-hiddd-o-n en="true"></i>&nbsp; &nbsp;Help &amp; Support</a>
             </li>
               
           </ul>
@@ -123,7 +126,7 @@
                 <div class="col-md-offset-2 col-sm-offset-3">
                 <!-- Main content on side -->
                  
-                <div class="container dash-spacing d-p d-t-n d-m-1-n d-m-2-n d-m-3-n">
+                <div class="container dash-spacing d-p d-t-n d-o-n d-m-1-n d-m-2-n d-m-3-n d-s-n d-h-n">
                 <div class="col-sm-10 col-xs-10">
                     <div class="col-md-3 col-sm-4 col-xs-6">
                             <h3 class="page-header" style="text-align:left;">My Shop</h3>
@@ -159,8 +162,8 @@
                 </div>
             </div>
             
-                <div class="container d-p-n d-t d-m-1-n d-m-2-n d-m-3-n" id="mytransactions">
-            <div class="dash-spacing">
+                <div class="container d-p-n d-t d-o-n d-m-1-n d-m-2-n d-m-3-n d-s-n d-h-n" id="mytransactions">
+                    <div class="dash-spacing">
                 <div id="no-more-tables" class="col-sm-10 table-responsive">
                     <table class="table text-center">
                         <thead class="text-center">
@@ -189,13 +192,62 @@
                     </table>
                     </div>
             </div>
-            </div>
-            
-                <div class="container dash-spacing d-p-n d-t-n d-m-1 d-m-2-n d-m-3-n" id="myproducts">
-                <div class="col-sm-10">
-                    <h3 class="page-header">My Products</h3>
                 </div>
-                <div class="dash-mypro">
+                    
+                <div class="container d-p-n d-t-n d-o d-m-1-n d-m-2-n d-m-3-n d-s-n d-h-n" id="myorders">
+                    <div class="dash-spacing">
+                    <div id="no-more-tables" class="col-sm-10 table-responsive">
+                    <table class="table text-center">
+                        <thead class="text-center">
+                            <tr class="custab">
+                                <th>Order ID</th>
+                                <th>Item</th>
+                                <th>Cost</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td data-title="Order ID"><p>RZM7UV4</p></td>
+                                    <td data-title="Item"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-cart">Details</button>                    
+                                    </td>
+                                    <td data-title="Cost"><p>Rs 49</p></td>
+                                    <td data-title="Status">
+                                        <select name="Status Unknown">
+                                            <option value="" disabled selected hidden>Status Unknown</option>
+                                            <option>Pending</option>
+                                            <option>Continued</option>
+                                            <option>Delivered</option>
+                                        </select> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-title="Order ID"><p>R3Z7A49</p></td>
+                                    <td data-title="Item"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-cart">Details</button>                    
+                                    </td>                                    
+                                    <td data-title="Cost"><p>Rs 53</p></td>
+                                    <td data-title="Status">
+                                        <select name="Status Unknown">
+                                            <option value="" disabled selected hidden>Status Unknown</option>
+                                            <option>Pending</option>
+                                            <option>Continued</option>
+                                            <option>Delivered</option>
+                                        </select> 
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="container dash-spacing d-p-n d-t-n d-o-n d-m-1 d-m-2-n d-m-3-n d-s-n d-h-n" id="myproducts">
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <h3 class="page-header">My Products</h3>
+                    </div>
+                </div>
+                <div class="dash-mypro col-sm-12">
                     <div class="col-sm-3">
                         <div class="thumbnail">
                             <img class="img-responsive" src="images/Spinach.png" alt="">
@@ -221,7 +273,7 @@
                 </div>  
             </div>
                     
-                <div class="container d-p-n d-t-n d-m-1-n d-m-2 d-m-3-n" id="mypro-add">
+                <div class="container d-p-n d-t-n d-o-n d-m-1-n d-m-2 d-m-3-n d-s-n d-h-n" id="mypro-add">
                 <div class="dash-spacing col-sm-10">
                     <div>
                         <ul class="nav nav-tabs">
@@ -360,7 +412,7 @@
             </div>
             </div>
 
-                <div class="container d-p-n d-t-n d-m-1-n d-m-2-n d-m-3" id="mg-pro">
+                <div class="container d-p-n d-t-n d-o-n d-m-1-n d-m-2-n d-m-3 d-s-n d-h-n" id="mg-pro">
                <div class="dash-spacing">
                 <div class="col-sm-10">
                     <h3 class="page-header">Manage Products</h3>
@@ -397,15 +449,73 @@
                 </div> 
                </div>
             </div>
+                    
+                 <div class="container d-p-n d-t-n d-o-n d-m-1-n d-m-2-n d-m-3-n d-s d-h-n" id="mysettings">
+                    <div class="dash-spacing">
+                        <div class="myshop">
+                    
+                    <div class="col-sm-12">
+                        <p class="col-sm-6">
+                            <span class="pull-right">
+                                <a href="#">Edit</a>
+                                <a href="#">Save</a>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <form role="form" action="#" name="profile-customer" id="profile-customer" method="post" >
+                         <p class="form-group">
+                            <label>User Name</label>
+                            <input  class="form-control" type="text" required />
+                         </p>
+                        <p class="form-group">
+                            <label>Mobile</label>
+                            <input  class="form-control" type="number" required />
+                         </p> 
+                        <p class="form-group">
+                            <label>Password</label>
+                            <input  class="form-control" type="text" required />
+                         </p> 
+                        <p class="form-group">
+                            <label>Change Password</label>
+                            <input  class="form-control" type="text" required />
+                         </p> 
+                        <p class="form-group">
+                            <label> </label>
+                            <input type="submit" value="UPDATE" class="btn  btn-reg" form="login" name="UPDATE" />
+                        </p>
+                    </form>
+                                <!-- / Form fields -->
+                    </div>
+                    </div>
+                </div>
+                    
+                <div class="container d-p-n d-t-n d-o-n d-m-1-n d-m-2-n d-m-3-n d-s-n d-h" id="helpme">
+                    <div class="dash-spacing">
+                        <form role="form" action="#" name="help-support" method="post" >
+                         <p class="form-group">
+                            <label>Enter Title</label>
+                            <input  class="form-control" type="text" required />
+                         </p>
+                        <p class="form-group">
+                            <label>Enter Description</label>
+                            <br/>
+                            <textarea name="Description" rows="5" columns="50"></textarea>
+                        </p> 
+                        <input type="submit" value="SUBMIT" class="btn  btn-reg" role="button" name="SUBMIT" />
+                        </form>
+                    </div>
+                </div>
                 
-                <div class="container d-p-n d-t-n d-m-1-n d-m-2-n d-m-3-n my-profile-edit dash-spacing">
+                <div class="container d-p-n d-t-n d-o-n d-m-1-n d-m-2-n d-m-3-n d-s-n d-h-n my-profile-edit dash-spacing">
                 
-                <div>
+                <div class="col-sm-3">
                     <div id="d-p-bk">
                         <a href="#"><h3 class="page-header"><i class="fa fa-caret-left" aria-hidden="true"></i> Edit</h3></a>
                     </div>
                 </div>
-                <div class="myshop">
+                <br/>
+                <div class="myshop col-sm-12">
                     <div class="row">
                         <div class="col-md-2"><img src="images/shop.png" width="150" height="150"/></div>
                         <div class="col-md-10">
@@ -452,7 +562,7 @@
                     </div>
                 </div>
                 
-                <div class="container d-p-n d-t-n d-m-1-n d-m-2-n d-m-3-n mg-pro-type-1">
+                <div class="container d-p-n d-t-n d-o-n d-m-1-n d-m-2-n d-m-3-n  d-s-n d-h-n mg-pro-type-1">
                 <div class="dash-spacing">
                     <div>
                         <div id="d-m-3-bk">
@@ -557,6 +667,77 @@
                 </div>
         </div>
         <!-- / Modal for Location-->
+        
+        <!-- Modal Details -->
+        <div class="modal fade modal-ext" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-myloc" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                    <h3>SHOP NAME</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row custyle table-responsive details">
+                        <table class="table text-center">
+                            <thead class="text-center">
+                                <tr class="custab">
+                                    <th>Item</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img class="img-responsive" src="images/Spinach.png" alt="">
+                                            </div>
+                                            <div>
+                                                                <p>&nbsp;</p>
+                                                                <p>Salad Green</p>
+                                                                <p>1 Kg</p>                            
+                                                            </div>
+                                        </div>
+                                    </td>
+                                                                    <td>                                                                   <p>&nbsp;</p><p>1</p>
+                                                                    </td>
+                                                                    <td><div><p>&nbsp;</p><p>96</p></div></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <img class="img-responsive" src="images/Spinach.png" alt="">
+                                                                            </div>
+                                                                            <div class="">
+                                                                                <p>&nbsp;</p>
+                                                                                <p>Green Jam</p>
+                                                                                <p>1 Kg</p>                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><p>&nbsp;</p><p>1</p></td>
+                                                                    <td><p>&nbsp;</p><p>96</p></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><p>&nbsp;</p><p>Total</p></td>
+                                                                    <td> </td>
+                                                                    <td>
+                                                                        <p>&nbsp;</p>
+                                                                        <p>192</p>
+                                                                    </td>
+                                                                </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- / Modal Details -->
     
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
