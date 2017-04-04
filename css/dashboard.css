@@ -1,0 +1,297 @@
+/* Dashboard CSS */
+
+.dash-content {
+    padding: 0;
+}
+
+.dash-nav, .dashoard {
+    margin: 0;
+}
+
+.notify-badge{
+    position: absolute;
+    background: #fff;
+    height:3rem;
+    top:2rem;
+    right:3rem;
+    width:3rem;
+    text-align: center;
+    line-height: 3.2rem;;
+    font-size: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.inner-board {
+    display: table-row;
+    vertical-align: top;
+    background: #2F3436;
+    background-size: 100% 100%;
+}
+
+.inner-board ul a {
+    color: #fff;
+    padding: 20px;
+}
+
+.inner-board li ul {
+    padding-left: 0;
+}
+
+.inner-board li ul a {
+    padding: 20px 20px 20px 60px;
+    display: block;
+}
+
+.inner-board li a:hover,
+.inner-board li a:focus {
+    color: #000;
+}
+
+.inner-board li ul a:hover,
+.inner-board li ul a:focus {
+    color: #000;
+    background: #ccc;
+}
+
+.content .inner-hide, #mytransactions, 
+#myproducts, #myorders, #mypro-add, #mg-pro, 
+#mysettings, #helpme, .my-profile-edit, .mg-pro-type-1,
+#cust-orders, #cust-helpme, #cust-feedback {
+    display: none;
+}
+
+.dash-note {
+    color: #fff;
+    padding: 2px 8px;
+}
+
+.dash-in {
+    background: #00BF5F;
+}
+
+.dash-out {
+    background: #FF1A1D;
+}
+
+.dash-spacing {
+    padding-top: 30px;
+}
+
+.dash-spacing + #mytransactions,
+#mysettings, #myorders, #helpme, #mypro-add,
+#cust-helpme, #cust-feedback {
+    padding-top: 30px;
+}
+
+.dash-spacing form button {
+    margin: 15px;
+}
+
+.dash-spacing input {
+    border-radius: 0;
+    max-width: 550px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.dash-spacing .dash-cost input {
+    max-width: 250px;
+}
+
+.dash-spacing input[type="submit"] {
+    padding: 5px 10px;
+}
+
+.dash-spacing select, .dash-spacing textarea {
+    width: 550px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+
+#no-more-tables select {
+    width: 150px;
+    margin: 0;
+}
+
+.table > tbody > tr > td {
+    padding: 10px;
+}
+
+.ddside:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+ }
+
+.details .thumbnail,
+.dash-mypro .thumbnail {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 5px #ccc;
+    padding: 5px;
+}
+
+.dash-num .dash-bor {
+    border: 1px solid #ccc; 
+    max-width: 180px;
+}
+
+.dash-num .dash-bor div {
+    display: inline-block;
+}
+
+.dash-num input {
+     border: 0;
+     padding: 5px;
+     max-width: 50px;
+}
+
+.content p {
+    margin: 0;
+}
+
+.navbar-fixed-left {
+  width: 200px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 200px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-left: 140px;
+}
+
+.merch-dash .content {
+    padding-top: 50px;
+}
+
+input[type="time"] {
+    padding: 5px;
+}
+
+@media (max-width:1200px) and (min-width:900px) {
+   
+    .dash-spacing {
+        padding-left: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    /* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/* Label the data */
+	#no-more-tables td:before { content: attr(data-title); }
+}
+
+
+@media only screen and (max-width: 425px) {
+    
+    .inner-board {
+        height: auto;
+        position: relative;
+        min-width: 100%;
+        padding:  5%;
+    }
+    
+
+.inner-board .navbar-nav > li {
+    padding: 1% 5%;
+  float: none;  /* Cancel default li float: left */
+  min-width: 320px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-left: 140px;
+}
+    
+
+} 
+
+.dash-content .customer-board {
+    border-color: #ccc;
+    background: #fff;
+}
+
+.dash-content .customer-board ul li a:hover,
+.dash-content .customer-board ul li a:focus,
+.dash-content .customer-board ul li a:active {
+    border-left: 3px solid #f62;
+    background: #eee;
+    color: #000;
+}
+
+.btn-customer {
+    background: #00BFF3;
+}
+
+.myshop a {
+    margin: 10px 15px;
+    padding: 5px 10px;
+}
+
+#profile-customer p {
+    display: table-row;
+}
+
+#profile-customer p label {
+    display: table-cell;
+    padding: 10px 30px 0 0;
+}
+
+#profile-customer p input {
+    display: table-cell;
+    padding: 10px;
+    min-width: 350px;
+    height: 40px;
+}
