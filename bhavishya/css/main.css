@@ -4,6 +4,9 @@
   font-weight: normal;
 }
 
+.al {
+  border: 1px solid #f00;
+}
 
 body {
     overflow-x: hidden;
