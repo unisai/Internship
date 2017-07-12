@@ -8,6 +8,10 @@
   border: 1px solid #f00;
 }
 
+.al button {
+  margin: 2px;
+}
+
 body {
     overflow-x: hidden;
 }
